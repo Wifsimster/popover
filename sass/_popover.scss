@@ -1,0 +1,36 @@
+.popover {
+  box-shadow: 0 0 5px rgba(0,0,0,0.4);
+  font-size: 12px;
+  position: absolute;
+  z-index: 4;
+  background-color: white;
+  padding: 10px 15px;
+  margin: 0;
+  border-radius: 2px;
+  @include opacity(0);
+  visibility: hidden;
+  top: 50px;
+
+  & > h2 {
+    font-size: 20px;
+  }
+  &.info > h2, &.success > h2, &.warning > h2, &.error > h2,  {
+    color: white;
+  }
+  
+  @include keyframes(fade-in-up) {
+    from {
+      @include opacity(0);
+      @include transform(translate3d(0, 100%, 0));
+    }
+    to {
+      @include opacity(1);
+      @include transform(none);
+    }
+  }
+
+  &.show {
+    visibility: visible;
+    @include animation('fade-in-up .5s both 1');
+  }
+}
