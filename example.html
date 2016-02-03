@@ -5,6 +5,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Popover</title>
     <link type="text/css" rel="stylesheet" href="css/style.css">
+    <link type="text/css" rel="stylesheet" href="css/popover.css">
     <script type="text/javascript" src="https://code.jquery.com/jquery-2.2.0.min.js"></script>
     <script type="text/javascript" src="js/popover.js"></script>
   </head>
@@ -34,7 +35,66 @@
         <h2>Title</h2>
         <p>HTML Content</p>
       </div>
+      <br><br>
+      <span data-popover="sPopover">?</span>
+      <div class="popover" id="sPopover">
+        <h2>Title</h2>
+        <p>HTML Content</p>
+      </div>
+      <br><br>
+      <span data-popover="sLeftPopover" data-popover-position="left">?</span>
+      <div class="popover" id="sLeftPopover">
+        <h2>Title</h2>
+        <p>HTML Content</p>
+      </div>
+      <br><br>
+      <span data-popover="sTopPopover" data-popover-position="top">?</span>
+      <div class="popover" id="sTopPopover">
+        <h2>Title</h2>
+        <p>HTML Content</p>
+      </div>
+      <br><br>
+      <span data-popover="sRightPopover" data-popover-position="right">?</span>
+      <div class="popover" id="sRightPopover">
+        <h2>Title</h2>
+        <p>HTML Content</p>
+      </div>
+      <br><br>
+      <span data-popover="dlPopover" data-popover-position="bottom">dl</span>
+      <div class="popover" id="dlPopover">
+        <h2>Popover title h2</h2>
+        <dl>
+          <dt>Description lists</dt>
+          <dd>A description list is perfect</dd>
+          <dt>Euismod</dt>
+          <dd>A description list is perfect</dd>
+          <dt>Euismod</dt>
+          <dd>Vestibulum id ligula porta felis euismod</dd>
+          <dt>Euismod</dt>
+          <dd>Vestibulum id ligula</dd>
+          <dt>Euismod</dt>
+          <dd>Vestibulum id ligula felis amod</dd>
+        </dl>
+      </div>
+      <br><br>
+      <span data-popover="dlTopPopover" data-popover-position="top">dl top</span>
+      <div class="popover" id="dlTopPopover">
+        <h2>Popover title h2</h2>
+        <dl>
+          <dt>Description lists</dt>
+          <dd>A description list is perfect</dd>
+          <dt>Euismod</dt>
+          <dd>A description list is perfect</dd>
+          <dt>Euismod</dt>
+          <dd>Vestibulum id ligula porta felis euismod</dd>
+          <dt>Euismod</dt>
+          <dd>Vestibulum id ligula</dd>
+          <dt>Euismod</dt>
+          <dd>Vestibulum id ligula felis amod</dd>
+        </dl>
+      </div>
     </section>
+
     <script>
       $(document).ready(function(){
         $('[data-popover]').popover();

@@ -24,7 +24,7 @@
           leftOffset = elemRect.left - bodyRect.left,
           topOffset   = elemRect.top - bodyRect.top,
           containerWidth = $container.width() + parseInt($container.css('padding-left')) + parseInt($container.css('padding-right')),
-          diff = containerWidth > $(this).width() ? (containerWidth - $(this).width())/2 : ($(this).width() - containerWidth)/2;
+          diff = ($(this).width() - containerWidth) / 2;
       if ($(this).attr('data-popover-position') === 'left') {
         $container
           .css('right', leftOffset + $(this).width() + OFFSET)
@@ -37,7 +37,7 @@
           .addClass('show');
       } else if ($(this).attr('data-popover-position') === 'top') {
         $container
-          .css('left', leftOffset - diff)
+          .css('left', leftOffset + diff)
           .css('top', topOffset - $(this).height() - $container.height() - OFFSET)
           .addClass('show');
       } else {
