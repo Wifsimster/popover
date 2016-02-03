@@ -5,19 +5,40 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Popover</title>
     <link type="text/css" rel="stylesheet" href="css/style.css">
+    <script type="text/javascript" src="https://code.jquery.com/jquery-2.2.0.min.js"></script>
     <script type="text/javascript" src="js/popover.js"></script>
   </head>
   <body>
     <section id="popover">
-      <div>
-        <div>
-          <i class="hexa-icons tooltip" data-popover="defaultPopover">question</i>
-          <div class="popover" id="defaultPopover">
-            <h2>Popover title h2</h2>
-            <p>Popover content.</p>
-          </div>
-        </div>
+      <h1>Ultra Simple Popover</h1>
+      <a data-popover="rightPopover" data-popover-position="right">Pop me to the right</a>
+      <div class="popover" id="rightPopover">
+        <h2>Title</h2>
+        <p>HTML content</p>
+      </div>
+      <br><br>
+      <a data-popover="leftPopover" data-popover-position="left">Pop me to the left</a>
+      <div class="popover" id="leftPopover">
+        <h2>Title</h2>
+        <p>HTML content</p>
+      </div>
+      <br><br>
+      <a data-popover="topPopover" data-popover-position="top">Pop me to the top</a>
+      <div class="popover" id="topPopover">
+        <h2>Title</h2>
+        <p>HTML content</p>
+      </div>
+      <br><br>
+      <a data-popover="bottomPopover" data-popover-position="bottom">Pop me to the bottom</a>
+      <div class="popover" id="bottomPopover">
+        <h2>Title</h2>
+        <p>HTML Content</p>
       </div>
     </section>
+    <script>
+      $(document).ready(function(){
+        $('[data-popover]').popover();
+      });
+    </script>
   </body>
 </html>
