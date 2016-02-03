@@ -6,13 +6,13 @@ There are no css styling or template embedded.
 
 ## Usage
 
-HTML
+**HTML**
 ```html
 <a data-popover="myPopover">Pop me</a>
 <div class="popover" id="myPopover">HTML content</div>
 ```
 
-JavaScript
+**JavaScript**
 ```javascript
 $('[data-popover]').popover();
 ```
@@ -20,7 +20,7 @@ $('[data-popover]').popover();
 ##Position
 Default position is bottom but you can specified it.
 
-HTML
+**HTML**
 ```html
 <a data-popover="myPopover" data-popover-position="left">Pop me</a>
 <a data-popover="myPopover" data-popover-position="right">Pop me</a>
