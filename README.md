@@ -18,7 +18,7 @@ $('[data-popover]').popover();
 ```
 
 ##Position
-Default position is bottom but you can specified it.
+Default position is bottom but you can specified it thought data attribute :
 
 **HTML**
 ```html
