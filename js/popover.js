@@ -27,7 +27,7 @@
           diff = ($(this).width() - containerWidth) / 2;
       if ($(this).attr('data-popover-position') === 'left') {
         $container
-          .css('right', leftOffset + $(this).width() + OFFSET)
+          .css('left', leftOffset - containerWidth - OFFSET)
           .css('top', topOffset - ($container.height() / 2))
           .addClass('show');
       } else if ($(this).attr('data-popover-position') === 'right') {

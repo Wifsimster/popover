@@ -1,0 +1,45 @@
+/* line 1, C:/Users/Wifsimster/Documents/GitHub/popover/sass/_global.scss */
+html, body {
+  height: 100%;
+  margin: 0;
+  box-sizing: border-box;
+  display: block;
+  font-weight: 300;
+  line-height: 22px; }
+
+/* line 9, C:/Users/Wifsimster/Documents/GitHub/popover/sass/_global.scss */
+body {
+  font: 13px / 1.4 Helvetica, arial, nimbussansl, liberationsans, freesans, clean, sans-serif, "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol";
+  color: #333;
+  background-color: #fff; }
+
+/* line 14, C:/Users/Wifsimster/Documents/GitHub/popover/sass/_global.scss */
+h1, h2 {
+  margin: 25px 0;
+  padding: 0; }
+
+/* line 18, C:/Users/Wifsimster/Documents/GitHub/popover/sass/_global.scss */
+h1 {
+  font-size: 42px; }
+
+/* line 21, C:/Users/Wifsimster/Documents/GitHub/popover/sass/_global.scss */
+h2 {
+  font-size: 30px; }
+
+/* line 24, C:/Users/Wifsimster/Documents/GitHub/popover/sass/_global.scss */
+div {
+  display: block; }
+
+/* line 27, C:/Users/Wifsimster/Documents/GitHub/popover/sass/_global.scss */
+section {
+  max-width: 1200px;
+  width: 90%;
+  padding-top: 15px;
+  margin: 0 auto;
+  text-align: center; }
+
+/* line 34, C:/Users/Wifsimster/Documents/GitHub/popover/sass/_global.scss */
+a {
+  cursor: pointer; }
+
+/*# sourceMappingURL=_global.css.map */
