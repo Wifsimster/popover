@@ -17,7 +17,6 @@ module.exports = function(grunt) {
     uglify: {
       my_target: {
         files: {
-          'css/style.min.css': ['css/style.css'],
           'js/popover.min.js': ['js/popover.js']
         }
       }
