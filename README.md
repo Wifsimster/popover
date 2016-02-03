@@ -2,7 +2,7 @@
 
 The main goal of this plugin is to be the most simple possible.
 
-There are no css styling or template embedded, only a ``small _popover.scss`` file.
+There are no css styling or template embedded, only a small ``_popover.scss`` file.
 
 ## Usage
 
