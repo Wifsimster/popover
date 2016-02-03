@@ -8,6 +8,11 @@ There are no css styling or template embedded, only a small ``_popover.scss`` fi
 
 **HTML**
 ```html
+<link type="text/css" rel="stylesheet" href="css/popover.css">
+<script type="text/javascript" src="https://code.jquery.com/jquery-2.2.0.min.js"></script>
+<script type="text/javascript" src="js/popover.js"></script>
+```
+```html
 <a data-popover="myPopover">Pop me</a>
 <div class="popover" id="myPopover">HTML content</div>
 ```
